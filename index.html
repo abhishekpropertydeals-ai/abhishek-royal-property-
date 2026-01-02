@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Royal Property</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+html{scroll-behavior:smooth}
+body{background:#f4f4f4}
+
+/* HEADER */
+header{
+background:#0b0f3b;
+color:#f5c76b;
+padding:15px 25px;
+display:flex;
+align-items:center;
+gap:15px;
+position:sticky;
+top:0;
+z-index:999;
+}
+header img{
+width:65px;
+border-radius:8px;
+}
+
+/* NAV */
+nav{
+background:#f5c76b;
+padding:12px;
+text-align:center;
+}
+nav a{
+margin:0 15px;
+color:black;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+height:85vh;
+background:
+linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+padding:20px;
+}
+.hero h1{font-size:42px}
+.hero p{font-size:18px;margin-top:10px}
+.hero a{
+margin-top:25px;
+background:#f5c76b;
+padding:15px 35px;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:6px;
+}
+
+/* SECTION */
+section{
+padding:60px 25px;
+background:white;
+margin-top:10px;
+}
+section h2{
+text-align:center;
+margin-bottom:35px;
+color:#0b0f3b;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.card{
+background:#fff;
+border-radius:14px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+overflow:hidden;
+text-align:center;
+}
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+.card p{
+padding:12px;
+font-weight:bold;
+}
+
+/* FORM */
+form{
+max-width:420px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+input,textarea,button{
+padding:12px;
+font-size:16px;
+}
+button{
+background:#f5c76b;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* LOGIN */
+#loginBox{
+max-width:350px;
+margin:auto;
+background:#fff;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+display:none;
+}
+
+/* CONTACT */
+.contact{
+background:#0b0f3b;
+color:white;
+text-align:center;
+line-height:1.7;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+right:18px;
+bottom:22px;
+background:#25D366;
+color:white;
+padding:16px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+<img src="https://cdn-icons-png.flaticon.com/512/2933/2933764.png">
+<h2>ABHISHEK ROYAL PROPERTY</h2>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#projects">Projects</a>
+<a href="#gallery">Gallery</a>
+<a href="#book">Book</a>
+<a onclick="openLogin()" style="cursor:pointer">Login</a>
+</nav>
+
+<div class="hero">
+<h1>Trusted Real Estate in Patna</h1>
+<p>Residential & Commercial Property Dealer</p>
+<a href="#book">Book Property</a>
+</div>
+
+<section id="about">
+<h2>About Us</h2>
+<p style="text-align:center;max-width:850px;margin:auto">
+Abhishek Royal Property is a trusted real estate consultancy in Patna,
+providing verified residential & commercial plots with complete legal support.
+</p>
+</section>
+
+<section id="features">
+<h2>Why Choose Us</h2>
+<div class="grid">
+<div class="card"><p>✔ Approved & Legal Land</p></div>
+<div class="card"><p>✔ Wide Road Projects</p></div>
+<div class="card"><p>✔ Registry Support</p></div>
+<div class="card"><p>✔ Trusted Developer</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Our Projects</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+<p>Danapur Housing Project</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+<p>Khagaul Township</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+<p>Patna Smart Plots</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1"></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00"></div>
+</div>
+</section>
+
+<section id="book">
+<h2>Book Property</h2>
+<form onsubmit="sendWA();return false;">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Mobile Number" required>
+<textarea id="msg" placeholder="Property Requirement"></textarea>
+<button>Send Enquiry on WhatsApp</button>
+</form>
+</section>
+
+<section>
+<div id="loginBox">
+<h3 style="text-align:center">Admin Login</h3>
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="loginMsg" style="text-align:center;font-weight:bold"></p>
+</div>
+</section>
+
+<section class="contact">
+<h2>Contact Us</h2>
+<p>📞 8757766871</p>
+<p>📧 abhishek.propertydeals@gmail.com</p>
+<p>
+302 & 304, Maya Complex,<br>
+Urja Nagar, Near Mount Litra School,<br>
+Danapur Khagaul Road, Patna – 801506
+</p>
+</section>
+
+<footer style="background:black;color:white;text-align:center;padding:15px">
+© 2025 Abhishek Royal Property
+</footer>
+
+<a class="float" href="https://wa.me/918757766871" target="_blank">💬</a>
+
+<script>
+function sendWA(){
+let n=name.value;
+let p=phone.value;
+let m=msg.value;
+window.open(
+"https://wa.me/918757766871?text=Name:"+n+"%0aPhone:"+p+"%0aRequirement:"+m,
+"_blank"
+);
+}
+function openLogin(){
+loginBox.style.display="block";
+loginBox.scrollIntoView({behavior:"smooth"});
+}
+function login(){
+if(username.value==="admin" && password.value==="1234"){
+loginMsg.style.color="green";
+loginMsg.innerHTML="Login Successful (Demo)";
+}else{
+loginMsg.style.color="red";
+loginMsg.innerHTML="Invalid Login";
+}
+}
+</script>
+
+</body>
+</html>
